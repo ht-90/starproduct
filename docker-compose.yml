@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+
+  starproduct:
+
+    container_name: starproduct
+    build: .
+    image: starproduct:latest
+    volumes:
+      - ".:/src"
+    stdin_open: true
+    tty: true
